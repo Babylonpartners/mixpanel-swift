@@ -83,9 +83,6 @@ class AutomaticEvents: NSObject, SKPaymentTransactionObserver, SKProductsRequest
                                                object: nil)
 
         SKPaymentQueue.default().add(self)
-        DispatchQueue.main.async {
-            self.setupAutomaticPushTracking()
-        }
     }
 
     @objc func appWillResignActive(_ notification: Notification) {
